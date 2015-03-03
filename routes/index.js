@@ -2,6 +2,13 @@
 var fragment = require('./components/fragment');
 var user = require('./components/user');
 
+function isLoggedIn(req, res, next) {
+  if (req.isAuthenticated())
+    return next();
+
+  res.status(403).send('Go away!');
+}
+
 module.exports = function (app, passport) {
   
   /** Navigation Routes **/
@@ -9,12 +16,12 @@ module.exports = function (app, passport) {
   app.get('/', common.index);
   app.get('/challenges', common.challenges);
   app.get('/venue', common.venue);
-  app.get('/users', common.users);
+  app.get('/users', isLoggedIn, common.users);
 
   /** Fragments **/
 
   app.get('/fragment/:id', fragment.get);
-  app.post('/fragment', fragment.update);
+  app.post('/fragment', isLoggedIn, fragment.update);
 
   /** Auth **/
 
@@ -26,7 +33,8 @@ module.exports = function (app, passport) {
 
   /** User **/
 
-  app.post('/user/new', user.add);
-  app.get('/user/list', user.list);
+  app.post('/user/new', isLoggedIn, user.add);
+  app.get('/user/list', isLoggedIn, user.list);
+  app.get('/logout', user.logout);
 
 };

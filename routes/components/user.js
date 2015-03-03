@@ -12,3 +12,8 @@ exports.list = function (req, res) {
     res.send(users);
   });
 }
+
+exports.logout = function (req, res) {
+  req.logout();
+  res.redirect('/');
+};
