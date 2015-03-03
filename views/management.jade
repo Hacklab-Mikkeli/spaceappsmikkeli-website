@@ -1,0 +1,10 @@
+﻿extends layout.jade
+block content
+  .text-content
+    input(type='email', id='new-user-email')
+    button.btn.btn-default(id='add-new-user-btn') Add user
+    h3 Allowed users
+    ul.user-list
+
+block custom_script
+  script(src='/js/usermanagement.js')
