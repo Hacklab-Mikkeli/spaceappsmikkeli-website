@@ -1,0 +1,38 @@
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  height: 100%;
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+.main {
+  min-height: 100%;
+  height: auto;
+}
+.jumbotron {
+  background: url('../img/banner-img.jpg') no-repeat center center scroll;
+  color:white;
+}
+.navbar-nav > li > a {
+  color:white !important;
+}
+.nav > li > a:hover {
+  color:#337AB7 !important;
+}
+#twitter-widget-0 {
+  width:100% !important;
+}
+.text-content {
+  padding-top:70px;
+}
+.footer-container {
+  margin-top:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  bottom: 0;
+  width: 100%;
+  background-color: #D8D8D8;
+  color: #888888;
+}
