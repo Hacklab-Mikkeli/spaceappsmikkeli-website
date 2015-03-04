@@ -13,7 +13,7 @@ require('./config/passport')(passport);
 
 var app = express();
 
-app.set('port', 3000);
+app.set('port', 9010);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, 'public')));
