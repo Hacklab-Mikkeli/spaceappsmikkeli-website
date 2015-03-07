@@ -1,9 +1,0 @@
-﻿var auth = {
-  'google': {
-      'clientid': '',
-      'secret': '',
-      'callbackURL': ''
-  }
-};
-
-module.exports = auth;

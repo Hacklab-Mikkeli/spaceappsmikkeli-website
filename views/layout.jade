@@ -8,7 +8,8 @@ head
     link(rel='icon', href='../../favicon.ico')
     title SpaceApps Mikkeli
     link(href='/css/bootstrap.min.css', rel='stylesheet')
-    link(href='/css/full-width-pics.css', rel='stylesheet') 
+    link(href='/css/full-width-pics.css', rel='stylesheet')
+    link(href='/css/layout.css', rel='stylesheet') 
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
     link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
   body
@@ -42,38 +43,42 @@ head
       block content
     .container-fluid.footer-container
       .container
-        .row
-          .col-md-8
-            h3.text-center Partners           
+        .row                   
+          .col-md-4.padding-bottom30
+            h3 Venue
+            hr                        
+            h4 Organizer
+            p Mikko Lampi
+            p +365 1234 567
+            h4 Address
+            p Patteristonkatu 2
+            p 50100 Mikkeli
+          .col-md-4.padding-bottom30
+            h3 Follow us!
+            hr                       
+            p
+              a(href='https://www.facebook.com/SpaceAppsMikkeli')
+                img.padding-right10(src='img/facebook-48.png')                      
+              a(href='https://twitter.com/SpaceAppsMLI')
+                img.padding-right10(src='img/twitter-48.png') 
+          .col-md-4.padding-bottom30
+            h3 Partners  
+            hr         
             br          
             .row
-              .col-md-6
+              .col-md-12.padding-bottom30
                 a(href='http://www.mamk.fi/')
-                  img(src='img/mamk_logo.png')            
-              .col-md-6
+                  img(src='img/mamk_logo.jpg')            
+              .col-md-12.padding-bottom30
                 a(href='http://mikkelies.fi/en/')
-                  img(src='img/mikkelies_logo.jpg')           
-            br           
-            .row
-              .col-md-6
+                  img(src='img/mikkelies_logo_280.jpg')           
+              .col-md-12.padding-bottom30
                 a(href='http://mikkeli.hacklab.fi/')
-                  img(src='img/hl_logo.png')              
-              .col-md-6        
-          .col-md-4.text-center
-            h3.text-center Follow us!             
-            br            
-            br            
-            h4
-              a(href='https://www.facebook.com/SpaceAppsMikkeli')
-                i.fa.fa-facebook
-                | &nbsp;Facebook             
-            br            
-            h4
-              a(href='https://twitter.com/SpaceAppsMLI')
-                i.fa.fa-twitter
-                | &nbsp;Twitter
+                  img(src='img/hl_logo.jpg') 
+          
     script(src='/js/jquery.js')
     script(src='/js/bootstrap.min.js')
+    script(src='/js/responsive.js')
     if user
       script(src='//cdn.ckeditor.com/4.4.7/standard/ckeditor.js')
       script(src='/js/spaceapp_admin.js')

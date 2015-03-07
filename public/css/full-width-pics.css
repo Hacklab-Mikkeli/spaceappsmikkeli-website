@@ -12,7 +12,8 @@ body {
   height: auto;
 }
 .jumbotron {
-  background: url('../img/banner-img.jpg') no-repeat center center scroll;
+  background: url('../img/nasa-flicker-galaxy.jpg') no-repeat scroll;
+  background-size:100%;
   color:white;
 }
 .navbar-nav > li > a {
@@ -20,6 +21,9 @@ body {
 }
 .nav > li > a:hover {
   color:#337AB7 !important;
+}
+.navbar-inverse {
+  background-color: #1D1D1D !important;
 }
 #twitter-widget-0 {
   width:100% !important;
@@ -33,6 +37,29 @@ body {
   padding-bottom:20px;
   bottom: 0;
   width: 100%;
-  background-color: #D8D8D8;
-  color: #888888;
+  background-color: #2D2D2D;
+  color: #F7F7F7;
+}
+
+.footer-container h3{
+  font-size: 14px;
+  color: #F7F7F7;
+}
+.footer-container hr{
+  border-color: #626262 !important;
+  margin:0 0 20px 0 !important;
+}
+.footer-container h4{
+  line-height: 3em;
+  font-size: 13px;
+  color: #F7F7F7;
+}
+.footer-container p{
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.7em;
+  color: #F7F7F7;
+}
+.logo-size {
+  width: 60%;
 }
