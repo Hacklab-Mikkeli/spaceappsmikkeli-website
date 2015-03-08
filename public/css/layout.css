@@ -1,0 +1,81 @@
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  height: 100%;
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+.exo {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200;
+  font-size: 2.5em;
+}
+.main {
+  min-height: 100%;
+  height: auto;
+}
+.jumbotron {
+  background: url('../img/nasa-flicker-galaxy.jpg') no-repeat center center scroll;
+  color:white;
+  background-color: black;
+  min-height: 520px;
+}
+.navbar-nav > li > a {
+  color:white !important;
+}
+.nav > li > a:hover {
+  color:#337AB7 !important;
+}
+.navbar-inverse {
+  background-color: #1D1D1D !important;
+}
+#twitter-widget-0 {
+  width:100% !important;
+}
+.text-content {
+  padding-top:70px;
+}
+
+.padding-bottom30 {
+  padding-bottom: 30px;
+}
+.padding-right10 {
+  padding: 0 10px 0 0;
+}
+
+.footer-container {
+  margin-top:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  bottom: 0;
+  width: 100%;
+  background-color: #2D2D2D;
+  color: #F7F7F7;
+}
+
+.footer-container h3{
+  font-size: 14px;
+  color: #F7F7F7;
+}
+.footer-container hr{
+  border-color: #626262 !important;
+  margin:0 0 20px 0 !important;
+}
+.footer-container h4{
+  line-height: 3em;
+  font-size: 13px;
+  color: #F7F7F7;
+}
+.footer-container p{
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.7em;
+  color: #F7F7F7;
+}
+@media (max-width: 500px) { 
+  .logo-size {
+    width: 80%;
+  }
+}
