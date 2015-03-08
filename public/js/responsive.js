@@ -1,6 +1,5 @@
 $(function () {
   resizefunctions();
-  //google.maps.event.addDomListener(window, 'load', initialize);
 });
 $(window).load(function(){
   jQuery.event.add(window, "resize", resizefunctions);

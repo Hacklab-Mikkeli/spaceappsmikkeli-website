@@ -8,10 +8,10 @@ head
     link(rel='icon', href='../../favicon.ico')
     title SpaceApps Mikkeli
     link(href='/css/bootstrap.min.css', rel='stylesheet')
-    link(href='/css/full-width-pics.css', rel='stylesheet')
     link(href='/css/layout.css', rel='stylesheet') 
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
     link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Exo+2:400,300,200' rel='stylesheet' type='text/css')
   body
     nav.navbar.navbar-inverse.navbar-fixed-top
       .container
@@ -35,10 +35,12 @@ head
                 a(href='/logout') Logout
     .jumbotron
       .container
-        h2.text-center
+        h2.text-center.exo
           | International Space Apps Challenge Mikkeli
           br
-          | 11-12 April   
+          | 11-12 April
+          br
+          img.logo-size(src='img/Space-Apps-Challenge-White-350.png')
     .container
       block content
     .container-fluid.footer-container
