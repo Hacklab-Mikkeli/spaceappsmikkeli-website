@@ -9,15 +9,21 @@ body {
 }
 .exo {
   font-family: 'Exo 2', sans-serif;
-  font-weight: 200;
-  font-size: 2.5em;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: black;
+}
+.space-logo {
+  position: absolute;
+  top: 13%;
+  left: 5%;
 }
 .main {
   min-height: 100%;
   height: auto;
 }
 .jumbotron {
-  background: url('../img/nasa-flicker-galaxy.jpg') no-repeat center center scroll;
+  background: url('../img/spaceapps_banneri.jpg') no-repeat center -20px scroll;
   color:white;
   background-color: black;
   min-height: 520px;
@@ -51,7 +57,7 @@ body {
   padding-bottom:20px;
   bottom: 0;
   width: 100%;
-  background-color: #2D2D2D;
+  background-color: #1D1D1D;
   color: #F7F7F7;
 }
 
@@ -73,9 +79,4 @@ body {
   margin: 0;
   line-height: 1.7em;
   color: #F7F7F7;
-}
-@media (max-width: 500px) { 
-  .logo-size {
-    width: 80%;
-  }
 }
