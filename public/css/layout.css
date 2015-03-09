@@ -13,6 +13,13 @@ body {
   font-size: 1.5em;
   color: black;
 }
+.exo-large {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  font-size: 4em;
+  padding: 30px 0 50px 0;
+  color: black;
+}
 .space-logo {
   position: absolute;
   top: 13%;
