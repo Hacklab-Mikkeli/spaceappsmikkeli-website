@@ -31,7 +31,7 @@ body {
 .jumbotron-narrow {
   background-color: rgb(57, 86, 166);
   color:white;
-  min-height: 300px;
+  min-height: 250px;
 }
 .jumbotron-narrow h1 {
   font-family: 'Exo 2', sans-serif;
