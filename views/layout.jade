@@ -47,17 +47,16 @@ head
     else
       .jumbotron-narrow
         .container
-          .col-md-12
-            if (menu === 'program')
-              h1 Program
-            if (menu === 'challenges')
-              h1 Challenges
-            if (menu === 'venue')
-              h1 Venue
-            if (menu === 'spaceguide')
-              h1 Space guide
-            if (menu === 'management')
-              h1 Management
+          if (menu === 'program')
+            h1 Program
+          if (menu === 'challenges')
+            h1 Challenges
+          if (menu === 'venue')
+            h1 Venue
+          if (menu === 'spaceguide')
+            h1 Space guide
+          if (menu === 'management')
+            h1 Management
     .container
       block content
     .container-fluid.footer-container
