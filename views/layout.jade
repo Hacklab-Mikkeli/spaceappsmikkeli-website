@@ -37,12 +37,27 @@ head
                 a(href='/users') Usermanagement
               li
                 a(href='/logout') Logout
-    .jumbotron
-      .container
-        .space-logo.text-center.exo
-          img.logo-size(src='img/sa_logo_circle_cs.png')
-          br
-          | April 11-12
+    if (menu === 'index')
+      .jumbotron
+        .container
+          .space-logo.text-center.exo
+            img.logo-size(src='img/sa_logo_circle_cs.png')
+            br
+            | April 11-12
+    else
+      .jumbotron-narrow
+        .container
+          .col-md-12
+            if (menu === 'program')
+              h1 Program
+            if (menu === 'challenges')
+              h1 Challenges
+            if (menu === 'venue')
+              h1 Venue
+            if (menu === 'spaceguide')
+              h1 Space guide
+            if (menu === 'management')
+              h1 Management
     .container
       block content
     .container-fluid.footer-container

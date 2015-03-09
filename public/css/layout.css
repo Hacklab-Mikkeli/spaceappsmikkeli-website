@@ -28,6 +28,21 @@ body {
   background-color: black;
   min-height: 520px;
 }
+.jumbotron-narrow {
+  background: url('../img/spaceapps_banneri.jpg') no-repeat center -20px scroll;
+  color:white;
+  background-color: black;
+  min-height: 300px;
+}
+.jumbotron-narrow h1 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  color: white;
+  background-color: rgb(57, 86, 166);
+  margin-top: 80px;
+  float: left;
+}
 .navbar-nav > li > a {
   color:white !important;
 }

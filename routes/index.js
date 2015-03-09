@@ -17,7 +17,7 @@ module.exports = function (app, passport) {
   app.get('/program', common.program);
   app.get('/challenges', common.challenges);
   app.get('/venue', common.venue);
-   app.get('/spaceguide', common.spaceguide);
+  app.get('/spaceguide', common.spaceguide);
   app.get('/users', isLoggedIn, common.users);
 
   /** Fragments **/
