@@ -124,6 +124,9 @@ body {
 .navbar-inverse {
   background-color: #1D1D1D !important;
 }
+.btn-primary {
+  font-family: 'Exo 2', sans-serif;
+}
 #twitter-widget-0 {
   width:100% !important;
 }
@@ -136,6 +139,10 @@ body {
 }
 .padding-right10 {
   padding: 0 10px 0 0;
+}
+
+.padding-top80 {
+  padding-top: 80px;
 }
 
 .footer-container {
