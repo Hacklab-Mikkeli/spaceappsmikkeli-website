@@ -22,21 +22,75 @@ body {
 }
 .space-logo {
   position: absolute;
-  top: 13%;
+  top: 8%;
   left: 5%;
+}
+.spaceship {
+  width: 40%;
+  margin:0 auto;
+  padding-top: 40px;
+}
+.spaceship img{
+  width: 100%;
+}
+.satellite {
+  position: absolute;
+  right: 10px;
+  top:60px;
+  width: 20%;
+}
+.satellite img{
+  width: 100%;
+}
+.earth {
+  width: 30%;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+.earth img{
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .earth {
+    width: 40%;
+  }
+  .spaceship {
+    width: 50%;
+    margin: 50px 38% 0;
+  }
+  .satellite {
+    visibility: hidden;
+  }
+  .jumbotron {
+    padding: 0;
+  }
+}
+@media (max-width: 700px) {
+  .spaceship {
+    margin-top: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .spaceship {
+    margin-top: 160px;
+  }
 }
 .main {
   min-height: 100%;
   height: auto;
 }
 .jumbotron {
-  background: url('../img/spaceapps_banneri.jpg') no-repeat center -20px scroll;
+  background: url('../img/taivas.png') no-repeat center top scroll;
   color:white;
   background-color: black;
-  min-height: 520px;
+  min-height: 420px;
+  overflow: hidden;
+  position: relative;
 }
 .jumbotron-narrow {
   background-color: rgb(57, 86, 166);
+  background: url('../img/taivas.png') no-repeat scroll;
   color:white;
   min-height: 250px;
 }
@@ -46,8 +100,20 @@ body {
   font-size: 5em;
   color: white;
   background-color: rgb(57, 86, 166);
-  margin-top: 80px;
+  margin-top: 85px;
   float: left;
+}
+@media (max-width: 500px) {
+  .jumbotron-narrow h1 {
+    font-size: 4.5em;
+  }
+  .space-logo {
+    top: 35%;
+    left: 16%;
+  }
+  .spaceship {
+    margin: 0 38%;
+  }
 }
 .navbar-nav > li > a {
   color:white !important;

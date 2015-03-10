@@ -11,5 +11,5 @@ function resizefunctions(){
 
 function topHeight() {
   var height = $(window).height();
-  $(".jumbotron").height(height-300);
+  $(".jumbotron").height(height-400);
 };
