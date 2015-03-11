@@ -84,7 +84,7 @@ body {
   background: url('../img/taivas.png') no-repeat center top scroll;
   color:white;
   background-color: black;
-  min-height: 420px;
+  min-height: 380px;
   overflow: hidden;
   position: relative;
 }
