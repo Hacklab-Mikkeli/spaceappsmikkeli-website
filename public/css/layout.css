@@ -174,3 +174,9 @@ body {
   line-height: 1.7em;
   color: #F7F7F7;
 }
+.opacity-text {
+  opacity:0.2;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+}
