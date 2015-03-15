@@ -1,20 +1,197 @@
 ﻿extends layout.jade
 block content
   .row.padding-bottom30
-    .col-md-8
-      .lead.text-content.dyn-content(id='challenge-page-01')
-    .col-md-4
-      .text-center.exo.padding-top60.padding-bottom30
-        img.logo-size(src='img/sa_logo_circle_cs.png')
-        br
-        | April 11-12
-      p.text-center.padding-bottom30
-        a.btn.btn-primary.btn-lg(href='https://2015.spaceappschallenge.org/register/mikkeli/') Register to the event!
+    .col-md-12.challenge-grid
+      h1.text-center.exo-large Outer Space
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/3-2-1-liftoff/")
+            h3 3-2-1 LIFTOFF: Launch that Rocket!
+          p Develop an experience that captures all the variables involved with making the launch decision.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/airburst-data-visualization/")
+            h3 Airburst Data Visualization
+          p Create a way of visualizing the threat of atmospheric airbursts using newly released data gathered in the Bolide study. Build on any open source solutions you find, or create your own.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/asteroids-2025-2100-future-history/")
+            h3 Asteroids 2025-2100 - Future History
+          p NASA is looking for creative ways to show the value of asteroids as a destination for exploration that are just as valuable as the Moon and Mars in terms of developing space infrastructure, as they have no gravity well.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/create-your-own-asteroid-mission/")
+            h3 Create Your Own Asteroid Mission
+          p Develop an asteroid mission and design the spacecraft. Implement the spacecraft and mission with the space flight simulator. Simulate the mission and identify future improvements for the simulation.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/deep-space-camsat/")
+            h3 Deep Space CamSat
+          p Design and model a feasibility demonstrator of a nano-satellite (e.g. cubesat) that can orbit and take pictures of deep space spacecraft during events of interest, e.g. planetary flybys.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/happy-moments-space/")
+            h3 Happy Moments From Space
+          p This challenge aims at developing an application to send congratulation messages personalized for the recipient with images from space sensors stored in the science archives.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/neuromorphic-studies-asteroid-imagery/")
+            h3 Neuromorphic Studies of Asteroid Imagery
+          p We want you to design an automated mechanism for processing photometric studies of Asteroids (i.e. Light curves) using computer vision, pattern recognition or neuromorphic technologies.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/robotic-observatory")
+            h3 Robotic Observatory
+          p Develop software applications and scripts that make an open hardware robotic observatory a souped-up Asteroid Hunting Machine.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/transient-watch-daily-news-active-neutron-stars-an/")
+            h3 Transient Watch – Daily News on Active Neutron Stars and Black Holes on Your Mobile Phone
+          p Develop a mobile phone app to provide interested astronomers with ‘daily news’ on the transient high-energy sky, based on information available from public pages at NASA, the European Space Agency, the Japanese Space Agency, etc.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/visualize-asteroid-skies/")
+            h3 Visualize the Asteroid Skies
+          p Create data aggregators and visualizations of asteroid data in meaningful ways that can educate the public about the need to explore asteroids and protect the Earth from them. 
+    .col-md-12.challenge-grid
+      hr
+      h1.text-center.exo-large Earth
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/clean-water-mapping/")
+            h3 Clean Water Mapping
+          p The challenge is to improve mapping of drinking water resources. This could include development of a crowdsourcing app to monitor and map: potable water availability (well/stream/reservoir levels as measured by local people/ organizations), water quality,
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/crop-alert-learning-growers/")
+            h3 Crop Alert – Learning From the Growers
+          p Develop a mobile/web app/SMS capability to help growers who face challenges from crop pests and diseases.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/food-directions/")
+            h3 Food Directions
+          p This is a challenge to identify and visualize the current capacity and potential of countries to be self-sufficient in the provision of food for their populations, and to map how current global food needs are met through reliance on international food tra
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/forest-monitor-mapping/")
+            h3 Forest Monitor Mapping
+          p This challenge asks you to enable crowdsourced local data to contribute to assessments of land cover change and the contributing factors. 
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/leaf-me-alone/")
+            h3 Leaf Me Alone
+          p Develop a tool to quantify and classify the amount of injury to the individual leaves of ozone-sensitive plants.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/my-sky-color/")
+            h3 My Sky Color
+          p Create a tool that lets people record the color of the sky using consistent and qualitative standards at a specific location.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/open-source-air-traffic-tracking/")
+            h3 Open-source Air Traffic Tracking
+          p We want you to design an automated mechanism for processing photometric studies of Asteroids (i.e. Light curves) using computer vision, pattern recognition or neuromorphic technologies.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/stream-gazer/")
+            h3 Stream Gazer
+          p Animate or visualize changes in streamflow across the US through time on a GIS layer of the stream and river network. 
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/volcanoes-icebergs-and-cats-space/")
+            h3 Volcanoes, Icebergs, and Cats from Space
+          p We need you to develop an app to crowdsource the discovery of “interesting” natural events as observed from space using data from NASA’s Earth observation satellites
+    .col-md-12.challenge-grid
+      hr
+      h1.text-center.exo-large Humans
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/3d-astromed-devices/")
+            h3 3D AstroMed Devices
+          p We need your help modeling medical devices that will not only be useful in space but also for remote health medicine situations on Earth.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/bodies-spacey-motion/")
+            h3 Bodies in Spacey Motion
+          p Develop an experience where motion is an input from a player as they try to complete space related tasks, such as: an off Earth astronaut on the International Space Station, Mars, Moon or other bodies performing exploration, research, and maintenance task
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/can-you-hear-me-now-space-y-sounds/")
+            h3 Can You Hear Me Now? Space-y Sounds
+          p Develop an interactive tool to leverage NASA audio files from space missions in new and innovative ways, from arts and entertainment to science and engineering. Your solution could be a new audio capability or platform to feature, consume, enhance, or alt
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/data-treasure-hunting/")
+            h3 Data Treasure Hunting 
+          p Devise a clever way to discover good keywords to describe the potential, hidden, secondary uses of NASA’s open data.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/fit-moose-metabolic-observations-space-explorers/")
+            h3 Fit as a MOoSE: Metabolic Observations of Space Explorers
+          p Develop a citizen science tool that ties astronaut health onboard the International Space Station and to health and exercise options on Earth. 
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/friends-high-places/")
+            h3 Friends In High Places
+          p We’d love for you to create or enhance an interactive app, both by visualizing the data gathered while Samantha has been in orbit, i.e. all the waves and greetings from Earth as she orbits over head. 
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/print-your-own-space-food/")
+            h3 Print Your Own Space Food
+          p Think Food Replicators, from an early sci-fi show. Investigate the benefits and feasibility of allowing astronauts to print their own food on the International Space Station or other space facility. 
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/space-station-telemetry-app/")
+            h3 Space Station Telemetry App
+          p This challenge is to build on-top of the actual Space Station telemetry data stream
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/space-wearables-designing-todays-launch-research/")
+            h3 Space Wearables: Designing for Today’s Launch & Research Stars
+          p Your challenge is to design wearable clothing and accessories that could be useful for the engineers, technicians, and scientists involved with ground processing spacecraft and rockets and/or researchers, both on and off world, doing lab or field work.    
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/spaceglove-spacecraft-gesture-and-voice-commanding/")
+            h3 SpaceGloVe: Spacecraft Gesture and Voice Commanding
+          p We’d like you to produce a new technique for controlling a computer application via one or more wearable devices (e.g. smartphone) that wirelessly connects to the main computer and responds to gestures and voice commands.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/survivor-mars-lava-tubes/")
+            h3 Survivor: Mars Lava Tubes
+          p Develop a game allowing players to explore lava tubes on Mars.
+    .col-md-12.challenge-grid
+      hr
+      h1.text-center.exo-large Robotics
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/robots-robots-robots/")
+            h3 Robots Robots Robots
+          p Create your own Earth-based robotics competition: build a robot, program it, and create your own competition with friends, co-workers, and/or members of your community
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/sensor-yourself/")
+            h3 Sensor Yourself
+          p Put together a stream of applicable sensor data of your choice to guide forward movement or to gauge when to stop based on danger or impediments. Use your imagination.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/spacebot-stereo-vision/")
+            h3 SpaceBot Stereo Vision
+          p Apply stereo vision data from space in new ways and use the data output from this challenge to create a data dashboard, visualization, infographic, app, software tools, or your own Earth-based robot.
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/spacecraft-thermal-power-consumption/")
+            h3 Spacecraft Thermal Power Consumption
+          p The goal of this operational prototype is to better estimate the power that will be consumed by the thermal subsystem in order to determine the power available for doing science. 
+      .col-md-4
+        .grid-box
+          a(href="http://2015.spaceappschallenge.org/challenge/zero-gee-bee-your-friendly-neighborhood-drone/")
+            h3 ZERO GEE Bee – Your Friendly Neighborhood Drone
+          p Design and simulate a drone (e.g. quad-copter) to be used on a space station, or another large manned spacecraft, to assist the crew with moving items (5 lb / ~2kg) around the facility.
   .row.padding-bottom30
     .col-md-12
       hr
       .col-md-12
-        h1.text-center.exo-large Previous challenges
+        h1.text-center.exo-large Previous award winners
       .col-md-4
         iframe(width="283" height="185" src="https://www.youtube.com/embed/z6U2Deg8zrQ" style="padding: 10px 0;" frameborder="0" allowfullscreen="")
         h3 SkyWatch

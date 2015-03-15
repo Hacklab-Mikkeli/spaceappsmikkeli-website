@@ -114,6 +114,9 @@ body {
   .spaceship {
     margin: 0 38%;
   }
+  .challenge-grid .col-md-4 .grid-box{
+    min-height: 150px !important;
+  }
 }
 .navbar-nav > li > a {
   color:white !important;
@@ -179,4 +182,19 @@ body {
   font-family: 'Exo 2', sans-serif;
   font-weight: 200;
   font-size: 1em;
+}
+.challenge-grid .col-md-4 {
+  padding-bottom: 30px;
+  
+}
+.challenge-grid .col-md-4 h3 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200;
+  font-size: 1.4em;
+}
+.challenge-grid .col-md-4 .grid-box{
+  padding: 0 15px;
+  border: 1px solid #EEEEEE;
+  border-radius: 20px;
+  min-height: 240px;
 }
