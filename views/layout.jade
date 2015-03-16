@@ -32,6 +32,8 @@ head
               a(href='/venue') Venue
             li
               a(href='/spaceguide') Space guide 
+            li
+              a(href='/faq') FAQ 
             if user
               li
                 a(href='/users') Usermanagement
@@ -61,6 +63,8 @@ head
             h1 Venue
           if (menu === 'spaceguide')
             h1 Space guide
+          if (menu === 'faq')
+            h1 FAQ
           if (menu === 'management')
             h1 Management
     .container

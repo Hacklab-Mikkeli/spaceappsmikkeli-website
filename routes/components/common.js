@@ -18,6 +18,10 @@ exports.spaceguide= function (req, res) {
   res.render('spaceguide', { user: req.user, menu: 'spaceguide' });
 };
 
+exports.faq= function (req, res) {
+  res.render('faq', { user: req.user, menu: 'faq' });
+};
+
 exports.users = function (req, res) {
   res.render('management', {user: req.user, menu: 'management'});
 };
