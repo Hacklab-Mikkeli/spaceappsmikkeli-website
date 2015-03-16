@@ -1,7 +1,18 @@
 ﻿extends layout.jade
 block content
+  .row
+    .col-md-8
+      .lead.text-content.dyn-content(id='challenges-page-01')
+    .col-md-4
+      .text-center.exo.padding-top60.padding-bottom30
+        img.logo-size(src='img/sa_logo_circle_cs.png')
+        br
+        | April 11-12
+      p.text-center.padding-bottom30
+        a.btn.btn-primary.btn-lg(href='https://2015.spaceappschallenge.org/register/mikkeli/') Register to the event!
   .row.padding-bottom30
     .col-md-12.challenge-grid
+      hr
       h1.text-center.exo-large Outer Space
       .col-md-4
         .grid-box
