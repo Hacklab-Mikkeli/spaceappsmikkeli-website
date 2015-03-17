@@ -2,7 +2,7 @@
 
 exports.get = function (req, res) {
   var identifier = req.param('id');
-  fragmentDAO.findByIdentifier(identifier, function (fragment) { 
+  fragmentDAO.findByIdentifierOrderByRevision(identifier, function (fragment) { 
     res.send(fragment);
   });
 };
@@ -10,7 +10,7 @@ exports.get = function (req, res) {
 exports.update = function (req, res) {
   var identifier = req.body.identifier;
   var html = req.body.html;
-  fragmentDAO.createOrUpdate(identifier, html, function (fragment) { 
+  fragmentDAO.create(identifier, html, function (fragment) { 
     res.send(fragment);
   });
 };

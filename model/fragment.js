@@ -2,7 +2,8 @@
 
 var Fragment = mongoose.model('Fragment', {
   html: String,
-  identifier: String
+  identifier: String,
+  revision: Number
 });
 
 module.exports = Fragment;
