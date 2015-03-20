@@ -24,6 +24,7 @@ body {
   position: absolute;
   top: 8%;
   left: 5%;
+  z-index: 10;
 }
 .spaceship {
   width: 40%;
@@ -176,6 +177,10 @@ body {
   margin: 0;
   line-height: 1.7em;
   color: #F7F7F7;
+}
+.logos img{
+  width: 180px;
+  padding: 5px 5px;
 }
 .opacity-text {
   opacity:0.2;
