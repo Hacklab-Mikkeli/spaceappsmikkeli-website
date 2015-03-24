@@ -27,6 +27,15 @@ exports.index = function(req, res){
 exports.blogPost = function(req, res){
   var postId = req.param('identifier');
   blogDAO.findByIdentifier(postId, function(post){
-    res.render('blogpost', {user: req.user, menu: 'blog', posts: posts});
+    res.render('blogpost', {user: req.user, menu: 'blog', post: post});
   });
+};
+
+exports.create = function(req, res){
+  var title = req.body.blog-title;
+  var content = req.body.blog-content;
+  blogDAO.create(title, content, function(post){
+    res.render('blogpost', {user: req.user, menu: 'blog', post: post});
+  });
+  
 };

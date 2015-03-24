@@ -25,3 +25,7 @@ exports.faq= function (req, res) {
 exports.users = function (req, res) {
   res.render('management', {user: req.user, menu: 'management'});
 };
+
+exports.newpost = function(req, res) {
+  res.render('newpost', {user: req.user, menu: 'blog'});
+};

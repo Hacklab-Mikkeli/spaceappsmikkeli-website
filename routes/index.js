@@ -1,6 +1,7 @@
 ﻿var common = require('./components/common');
 var fragment = require('./components/fragment');
 var user = require('./components/user');
+var blog = require('./components/blog');
 
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated())
@@ -20,6 +21,13 @@ module.exports = function (app, passport) {
   app.get('/spaceguide', common.spaceguide);
   app.get('/faq', common.faq);
   app.get('/users', isLoggedIn, common.users);
+  app.get('/blog', blog.index);
+  app.get('/blog/new', common.newpost);
+  
+  /** Blog posts **/
+  
+  app.post('/blog/new/post', blog.create);
+  app.get('/blog/post/:identifier', blog.blogPost);
 
   /** Fragments **/
 
