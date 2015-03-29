@@ -1,15 +1,23 @@
 ﻿extends layout.jade
 block content
+  input(id='blog-post-identifier' type='hidden', value=post.identifier)
+  input(id='blog-post-created' type='hidden', value=post.created)
   .row
     .col-md-8
-      h3
-       | #{post.title}
-      p
-       | #{post.body}
+      h1.blog-field(id='blog-post-title')
+        | !{post.title}
+      br
+      div.blog-field(id='blog-post-content')
+        | !{post.content}
+      if user
+        button.btn.btn-primary(id='update-blog-post') Save
     .col-md-4
       .text-center.exo.padding-top60.padding-bottom30
-        img.logo-size(src='img/sa_logo_circle_cs.png')
+        img.logo-size(src='/img/sa_logo_circle_cs.png')
         br
         | April 11-12
       p.text-center.padding-bottom30
         a.btn.btn-primary.btn-lg(href='https://2015.spaceappschallenge.org/register/mikkeli/') Register to the event!
+block custom_script
+  if user
+    script(src='/js/blog-editor.js')

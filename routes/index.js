@@ -22,12 +22,13 @@ module.exports = function (app, passport) {
   app.get('/faq', common.faq);
   app.get('/users', isLoggedIn, common.users);
   app.get('/blog', blog.index);
-  app.get('/blog/new', common.newpost);
+  app.get('/blog/new', isLoggedIn, common.newpost);
   
   /** Blog posts **/
   
-  app.post('/blog/new/post', blog.create);
+  app.post('/blog/new/post', isLoggedIn, blog.create);
   app.get('/blog/post/:identifier', blog.blogPost);
+  app.post('/blog/post/:identifier/update', isLoggedIn, blog.update);
 
   /** Fragments **/
 

@@ -2,17 +2,23 @@
 block content
   .row
     .col-md-8
+      if user
+        br
+        a.btn.btn-primary(href='/blog/new') 
+          | New post
       .lead.text-content
         each post in posts
-          a(href='blog/post/'+post.identifier)
+          div
+            a(href='/blog/post/'+post.identifier)
+              h1
+                | !{post.title}
+            br
             div
-              h3
-                #{post.title}
-              p
-                #{post.body}
+              | !{post.content}
+          hr
     .col-md-4
       .text-center.exo.padding-top60.padding-bottom30
-        img.logo-size(src='img/sa_logo_circle_cs.png')
+        img.logo-size(src='/img/sa_logo_circle_cs.png')
         br
         | April 11-12
       p.text-center.padding-bottom30
