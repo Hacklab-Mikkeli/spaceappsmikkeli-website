@@ -122,6 +122,14 @@ head
     script(src='/js/jquery.js')
     script(src='/js/bootstrap.min.js')
     script(src='/js/responsive.js')
+    script(src='/js/instafeed.min.js')
+    script.
+      var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'spaceappsmli',
+        clientId: '7e3a3544028a4591b82817e16c85b538'
+      });
+      feed.run();
     if user
       script(src='//cdn.ckeditor.com/4.4.7/standard/ckeditor.js')
       script(src='/js/spaceapp_admin.js')
