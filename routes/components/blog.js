@@ -44,7 +44,7 @@ exports.create = function(req, res){
 exports.latest = function(req, res) {
 	blogDAO.list(function(posts){
 		res.send(posts[0]);
-	};
+	});
 };
 
 exports.update = function(req, res){
