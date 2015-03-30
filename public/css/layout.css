@@ -203,3 +203,6 @@ body {
   border-radius: 20px;
   min-height: 240px;
 }
+#instafeed img {
+  padding: 0 10px;
+}
