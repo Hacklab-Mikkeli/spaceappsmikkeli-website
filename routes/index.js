@@ -28,6 +28,7 @@ module.exports = function (app, passport) {
   
   app.post('/blog/new/post', isLoggedIn, blog.create);
   app.get('/blog/post/:identifier', blog.blogPost);
+  app.get('/blog/latest', blog.latest);
   app.post('/blog/post/:identifier/update', isLoggedIn, blog.update);
 
   /** Fragments **/

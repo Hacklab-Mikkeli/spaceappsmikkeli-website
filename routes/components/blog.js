@@ -41,6 +41,12 @@ exports.create = function(req, res){
   });
 };
 
+exports.latest = function(req, res) {
+	blogDAO.list(function(posts){
+		res.send(posts[0]);
+	};
+};
+
 exports.update = function(req, res){
   var title = req.body.blog_title;
   var content = req.body.blog_content;
