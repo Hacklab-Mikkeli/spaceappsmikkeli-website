@@ -3,8 +3,7 @@
   'use strict';
 
   $.getJSON('/blog/latest', function (post) { 
-    console.log(post.title);
-    $("#latest-blog").html("<h1>"+post.title+"</h1>");
+    $("#latest-blog").html("<h1>"+post.title+"</h1>"+post.content);
   });
   
 }).call(this);
