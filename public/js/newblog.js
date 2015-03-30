@@ -3,7 +3,7 @@
 	'use strict';
 	
 	function getIdentifier(title){
-		  return encodeURIComponent(title.replace(' ', '-').replace('ä', 'a').replace('ö', 'o'));
+		return title.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');
 	};
 	
 	$(document).ready(function(){
