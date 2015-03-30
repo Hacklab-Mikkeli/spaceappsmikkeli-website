@@ -1,4 +1,8 @@
 .jcarousel-skin-embedagram .jcarousel-container {
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border-radius: 0px; 
+    background: white;
     border: 1px solid #EEE;
 }
 
