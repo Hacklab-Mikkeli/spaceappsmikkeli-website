@@ -1,9 +1,5 @@
 .jcarousel-skin-embedagram .jcarousel-container {
-    -moz-border-radius: 10px; 
-    -webkit-border-radius: 10px; 
-    border-radius: 10px; 
-    background: #BBB;
-    border: 1px solid #333;
+    border: 1px solid #EEE;
 }
 
 .jcarousel-skin-embedagram .jcarousel-direction-rtl {
